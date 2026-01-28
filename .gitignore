@@ -1,4 +1,4 @@
-testapp_python/venv/
+app_python/venv/
 __pycache__/
 *.py[cod]
 .DS_Store
