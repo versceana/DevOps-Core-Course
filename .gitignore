@@ -1,1 +1,6 @@
-test
+app_python/venv/
+__pycache__/
+*.py[cod]
+.DS_Store
+*.log
+.env
