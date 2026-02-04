@@ -1,0 +1,332 @@
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 657B 0.0s done
+#1 DONE 0.1s
+
+#2 [internal] load metadata for docker.io/library/python:3.13-slim
+#2 DONE 9.5s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 144B done
+#3 DONE 0.0s
+
+#4 [internal] load build context
+#4 transferring context: 3.91kB done
+#4 DONE 0.0s
+
+#5 [1/8] FROM docker.io/library/python:3.13-slim@sha256:2b9c9803c6a287cafa0a8c917211dddd23dcd2016f049690ee5219f5d3f1636e
+#5 resolve docker.io/library/python:3.13-slim@sha256:2b9c9803c6a287cafa0a8c917211dddd23dcd2016f049690ee5219f5d3f1636e 0.0s done
+#5 DONE 0.0s
+
+#5 [1/8] FROM docker.io/library/python:3.13-slim@sha256:2b9c9803c6a287cafa0a8c917211dddd23dcd2016f049690ee5219f5d3f1636e
+#5 sha256:97fc85b49690b12f13f53067a3190e231790ff42832ff5f39e97042fc4d4ede6 0B / 250B 0.2s
+#5 sha256:a6866fe8c3d2436d6a24f7d829aca8349726c5c198725f763a40e2e4263a53e6 0B / 11.72MB 0.2s
+#5 sha256:fe9a90620d58e0d94bd1a536412e60ddaff85c045f729197536cb8a382e1c5a2 0B / 1.27MB 0.2s
+#5 sha256:3ea009573b472d108af9af31ec35a06fe3649084f6611cf11f7d594b85cf7a7c 0B / 30.14MB 0.2s
+#5 sha256:a6866fe8c3d2436d6a24f7d829aca8349726c5c198725f763a40e2e4263a53e6 1.05MB / 11.72MB 0.6s
+#5 sha256:97fc85b49690b12f13f53067a3190e231790ff42832ff5f39e97042fc4d4ede6 250B / 250B 0.7s done
+#5 sha256:a6866fe8c3d2436d6a24f7d829aca8349726c5c198725f763a40e2e4263a53e6 2.10MB / 11.72MB 0.8s
+#5 sha256:a6866fe8c3d2436d6a24f7d829aca8349726c5c198725f763a40e2e4263a53e6 2.89MB / 11.72MB 1.4s
+#5 sha256:fe9a90620d58e0d94bd1a536412e60ddaff85c045f729197536cb8a382e1c5a2 1.27MB / 1.27MB 1.9s done
+#5 sha256:a6866fe8c3d2436d6a24f7d829aca8349726c5c198725f763a40e2e4263a53e6 4.19MB / 11.72MB 2.1s
+#5 sha256:3ea009573b472d108af9af31ec35a06fe3649084f6611cf11f7d594b85cf7a7c 2.10MB / 30.14MB 2.4s
+#5 sha256:a6866fe8c3d2436d6a24f7d829aca8349726c5c198725f763a40e2e4263a53e6 5.23MB / 11.72MB 2.7s
+#5 sha256:a6866fe8c3d2436d6a24f7d829aca8349726c5c198725f763a40e2e4263a53e6 6.29MB / 11.72MB 3.3s
+#5 sha256:3ea009573b472d108af9af31ec35a06fe3649084f6611cf11f7d594b85cf7a7c 4.19MB / 30.14MB 3.5s
+#5 sha256:a6866fe8c3d2436d6a24f7d829aca8349726c5c198725f763a40e2e4263a53e6 7.34MB / 11.72MB 4.1s
+#5 sha256:a6866fe8c3d2436d6a24f7d829aca8349726c5c198725f763a40e2e4263a53e6 8.39MB / 11.72MB 4.7s
+#5 sha256:3ea009573b472d108af9af31ec35a06fe3649084f6611cf11f7d594b85cf7a7c 6.29MB / 30.14MB 4.7s
+#5 sha256:a6866fe8c3d2436d6a24f7d829aca8349726c5c198725f763a40e2e4263a53e6 8.98MB / 11.72MB 5.1s
+#5 sha256:a6866fe8c3d2436d6a24f7d829aca8349726c5c198725f763a40e2e4263a53e6 10.49MB / 11.72MB 5.6s
+#5 sha256:3ea009573b472d108af9af31ec35a06fe3649084f6611cf11f7d594b85cf7a7c 8.33MB / 30.14MB 5.7s
+#5 sha256:a6866fe8c3d2436d6a24f7d829aca8349726c5c198725f763a40e2e4263a53e6 11.72MB / 11.72MB 6.2s
+#5 sha256:a6866fe8c3d2436d6a24f7d829aca8349726c5c198725f763a40e2e4263a53e6 11.72MB / 11.72MB 6.2s done
+#5 sha256:3ea009573b472d108af9af31ec35a06fe3649084f6611cf11f7d594b85cf7a7c 10.49MB / 30.14MB 6.6s
+#5 sha256:3ea009573b472d108af9af31ec35a06fe3649084f6611cf11f7d594b85cf7a7c 12.58MB / 30.14MB 7.1s
+#5 sha256:3ea009573b472d108af9af31ec35a06fe3649084f6611cf11f7d594b85cf7a7c 14.68MB / 30.14MB 7.7s
+#5 sha256:3ea009573b472d108af9af31ec35a06fe3649084f6611cf11f7d594b85cf7a7c 16.78MB / 30.14MB 8.3s
+#5 sha256:3ea009573b472d108af9af31ec35a06fe3649084f6611cf11f7d594b85cf7a7c 18.87MB / 30.14MB 8.9s
+#5 sha256:3ea009573b472d108af9af31ec35a06fe3649084f6611cf11f7d594b85cf7a7c 20.97MB / 30.14MB 9.3s
+#5 sha256:3ea009573b472d108af9af31ec35a06fe3649084f6611cf11f7d594b85cf7a7c 23.07MB / 30.14MB 9.9s
+#5 sha256:3ea009573b472d108af9af31ec35a06fe3649084f6611cf11f7d594b85cf7a7c 25.17MB / 30.14MB 10.5s
+#5 sha256:3ea009573b472d108af9af31ec35a06fe3649084f6611cf11f7d594b85cf7a7c 27.26MB / 30.14MB 11.1s
+#5 sha256:3ea009573b472d108af9af31ec35a06fe3649084f6611cf11f7d594b85cf7a7c 29.36MB / 30.14MB 11.6s
+#5 sha256:3ea009573b472d108af9af31ec35a06fe3649084f6611cf11f7d594b85cf7a7c 30.14MB / 30.14MB 11.8s done
+#5 extracting sha256:3ea009573b472d108af9af31ec35a06fe3649084f6611cf11f7d594b85cf7a7c
+#5 extracting sha256:3ea009573b472d108af9af31ec35a06fe3649084f6611cf11f7d594b85cf7a7c 4.5s done
+#5 DONE 16.3s
+
+#5 [1/8] FROM docker.io/library/python:3.13-slim@sha256:2b9c9803c6a287cafa0a8c917211dddd23dcd2016f049690ee5219f5d3f1636e
+#5 extracting sha256:fe9a90620d58e0d94bd1a536412e60ddaff85c045f729197536cb8a382e1c5a2
+#5 extracting sha256:fe9a90620d58e0d94bd1a536412e60ddaff85c045f729197536cb8a382e1c5a2 0.2s done
+#5 DONE 16.5s
+
+#5 [1/8] FROM docker.io/library/python:3.13-slim@sha256:2b9c9803c6a287cafa0a8c917211dddd23dcd2016f049690ee5219f5d3f1636e
+#5 extracting sha256:a6866fe8c3d2436d6a24f7d829aca8349726c5c198725f763a40e2e4263a53e6
+#5 extracting sha256:a6866fe8c3d2436d6a24f7d829aca8349726c5c198725f763a40e2e4263a53e6 2.3s done
+#5 DONE 18.9s
+
+#5 [1/8] FROM docker.io/library/python:3.13-slim@sha256:2b9c9803c6a287cafa0a8c917211dddd23dcd2016f049690ee5219f5d3f1636e
+#5 extracting sha256:97fc85b49690b12f13f53067a3190e231790ff42832ff5f39e97042fc4d4ede6 0.0s done
+#5 DONE 18.9s
+
+#6 [2/8] RUN apt-get update  && apt-get install -y --no-install-recommends gcc ca-certificates  && rm -rf /var/lib/apt/lists/*
+#6 8.017 Hit:1 http://deb.debian.org/debian trixie InRelease
+#6 8.082 Get:2 http://deb.debian.org/debian trixie-updates InRelease [47.3 kB]
+#6 8.194 Get:3 http://deb.debian.org/debian-security trixie-security InRelease [43.4 kB]
+#6 8.277 Get:4 http://deb.debian.org/debian trixie/main arm64 Packages [9607 kB]
+#6 10.68 Get:5 http://deb.debian.org/debian trixie-updates/main arm64 Packages [5404 B]
+#6 10.74 Get:6 http://deb.debian.org/debian-security trixie-security/main arm64 Packages [99.0 kB]
+#6 12.65 Fetched 9802 kB in 10s (977 kB/s)
+#6 12.65 Reading package lists...
+#6 13.29 Reading package lists...
+#6 13.93 Building dependency tree...
+#6 14.13 Reading state information...
+#6 14.47 ca-certificates is already the newest version (20250419).
+#6 14.47 The following additional packages will be installed:
+#6 14.47   binutils binutils-aarch64-linux-gnu binutils-common cpp cpp-14
+#6 14.47   cpp-14-aarch64-linux-gnu cpp-aarch64-linux-gnu gcc-14
+#6 14.47   gcc-14-aarch64-linux-gnu gcc-aarch64-linux-gnu libasan8 libatomic1
+#6 14.47   libbinutils libcc1-0 libctf-nobfd0 libctf0 libgcc-14-dev libgomp1
+#6 14.47   libgprofng0 libhwasan0 libisl23 libitm1 libjansson4 liblsan0 libmpc3
+#6 14.47   libmpfr6 libsframe1 libtsan2 libubsan1
+#6 14.47 Suggested packages:
+#6 14.47   binutils-doc gprofng-gui binutils-gold cpp-doc gcc-14-locales cpp-14-doc
+#6 14.47   gcc-multilib make manpages-dev autoconf automake libtool flex bison gdb
+#6 14.47   gcc-doc gcc-14-doc gdb-aarch64-linux-gnu
+#6 14.47 Recommended packages:
+#6 14.47   libc6-dev | libc-dev libc6-dev libc-dev
+#6 14.69 The following NEW packages will be installed:
+#6 14.69   binutils binutils-aarch64-linux-gnu binutils-common cpp cpp-14
+#6 14.69   cpp-14-aarch64-linux-gnu cpp-aarch64-linux-gnu gcc gcc-14
+#6 14.69   gcc-14-aarch64-linux-gnu gcc-aarch64-linux-gnu libasan8 libatomic1
+#6 14.69   libbinutils libcc1-0 libctf-nobfd0 libctf0 libgcc-14-dev libgomp1
+#6 14.69   libgprofng0 libhwasan0 libisl23 libitm1 libjansson4 liblsan0 libmpc3
+#6 14.69   libmpfr6 libsframe1 libtsan2 libubsan1
+#6 15.02 0 upgraded, 30 newly installed, 0 to remove and 0 not upgraded.
+#6 15.02 Need to get 45.2 MB of archives.
+#6 15.02 After this operation, 182 MB of additional disk space will be used.
+#6 15.02 Get:1 http://deb.debian.org/debian trixie/main arm64 libsframe1 arm64 2.44-3 [77.8 kB]
+#6 15.18 Get:2 http://deb.debian.org/debian trixie/main arm64 binutils-common arm64 2.44-3 [2509 kB]
+#6 15.65 Get:3 http://deb.debian.org/debian trixie/main arm64 libbinutils arm64 2.44-3 [660 kB]
+#6 15.82 Get:4 http://deb.debian.org/debian trixie/main arm64 libgprofng0 arm64 2.44-3 [668 kB]
+#6 16.00 Get:5 http://deb.debian.org/debian trixie/main arm64 libctf-nobfd0 arm64 2.44-3 [152 kB]
+#6 16.04 Get:6 http://deb.debian.org/debian trixie/main arm64 libctf0 arm64 2.44-3 [84.2 kB]
+#6 16.07 Get:7 http://deb.debian.org/debian trixie/main arm64 libjansson4 arm64 2.14-2+b3 [39.2 kB]
+#6 16.08 Get:8 http://deb.debian.org/debian trixie/main arm64 binutils-aarch64-linux-gnu arm64 2.44-3 [820 kB]
+#6 16.29 Get:9 http://deb.debian.org/debian trixie/main arm64 binutils arm64 2.44-3 [262 kB]
+#6 16.36 Get:10 http://deb.debian.org/debian trixie/main arm64 libisl23 arm64 0.27-1 [601 kB]
+#6 16.52 Get:11 http://deb.debian.org/debian trixie/main arm64 libmpfr6 arm64 4.2.2-1 [685 kB]
+#6 16.71 Get:12 http://deb.debian.org/debian trixie/main arm64 libmpc3 arm64 1.3.1-1+b3 [50.5 kB]
+#6 16.72 Get:13 http://deb.debian.org/debian trixie/main arm64 cpp-14-aarch64-linux-gnu arm64 14.2.0-19 [9169 kB]
+#6 19.17 Get:14 http://deb.debian.org/debian trixie/main arm64 cpp-14 arm64 14.2.0-19 [1276 B]
+#6 19.17 Get:15 http://deb.debian.org/debian trixie/main arm64 cpp-aarch64-linux-gnu arm64 4:14.2.0-1 [4832 B]
+#6 19.17 Get:16 http://deb.debian.org/debian trixie/main arm64 cpp arm64 4:14.2.0-1 [1568 B]
+#6 19.17 Get:17 http://deb.debian.org/debian trixie/main arm64 libcc1-0 arm64 14.2.0-19 [42.2 kB]
+#6 19.17 Get:18 http://deb.debian.org/debian trixie/main arm64 libgomp1 arm64 14.2.0-19 [124 kB]
+#6 19.22 Get:19 http://deb.debian.org/debian trixie/main arm64 libitm1 arm64 14.2.0-19 [24.2 kB]
+#6 19.22 Get:20 http://deb.debian.org/debian trixie/main arm64 libatomic1 arm64 14.2.0-19 [10.1 kB]
+#6 19.22 Get:21 http://deb.debian.org/debian trixie/main arm64 libasan8 arm64 14.2.0-19 [2578 kB]
+#6 19.90 Get:22 http://deb.debian.org/debian trixie/main arm64 liblsan0 arm64 14.2.0-19 [1161 kB]
+#6 20.22 Get:23 http://deb.debian.org/debian trixie/main arm64 libtsan2 arm64 14.2.0-19 [2383 kB]
+#6 20.85 Get:24 http://deb.debian.org/debian trixie/main arm64 libubsan1 arm64 14.2.0-19 [1039 kB]
+#6 21.13 Get:25 http://deb.debian.org/debian trixie/main arm64 libhwasan0 arm64 14.2.0-19 [1442 kB]
+#6 21.52 Get:26 http://deb.debian.org/debian trixie/main arm64 libgcc-14-dev arm64 14.2.0-19 [2359 kB]
+#6 22.16 Get:27 http://deb.debian.org/debian trixie/main arm64 gcc-14-aarch64-linux-gnu arm64 14.2.0-19 [17.7 MB]
+#6 26.86 Get:28 http://deb.debian.org/debian trixie/main arm64 gcc-14 arm64 14.2.0-19 [529 kB]
+#6 26.99 Get:29 http://deb.debian.org/debian trixie/main arm64 gcc-aarch64-linux-gnu arm64 4:14.2.0-1 [1440 B]
+#6 26.99 Get:30 http://deb.debian.org/debian trixie/main arm64 gcc arm64 4:14.2.0-1 [5136 B]
+#6 29.03 Fetched 45.2 MB in 12s (3687 kB/s)
+#6 29.08 Selecting previously unselected package libsframe1:arm64.
+#6 29.08 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 5643 files and directories currently installed.)
+#6 29.11 Preparing to unpack .../00-libsframe1_2.44-3_arm64.deb ...
+#6 29.12 Unpacking libsframe1:arm64 (2.44-3) ...
+#6 29.16 Selecting previously unselected package binutils-common:arm64.
+#6 29.16 Preparing to unpack .../01-binutils-common_2.44-3_arm64.deb ...
+#6 29.16 Unpacking binutils-common:arm64 (2.44-3) ...
+#6 29.50 Selecting previously unselected package libbinutils:arm64.
+#6 29.50 Preparing to unpack .../02-libbinutils_2.44-3_arm64.deb ...
+#6 29.51 Unpacking libbinutils:arm64 (2.44-3) ...
+#6 29.59 Selecting previously unselected package libgprofng0:arm64.
+#6 29.59 Preparing to unpack .../03-libgprofng0_2.44-3_arm64.deb ...
+#6 29.59 Unpacking libgprofng0:arm64 (2.44-3) ...
+#6 29.68 Selecting previously unselected package libctf-nobfd0:arm64.
+#6 29.68 Preparing to unpack .../04-libctf-nobfd0_2.44-3_arm64.deb ...
+#6 29.69 Unpacking libctf-nobfd0:arm64 (2.44-3) ...
+#6 29.71 Selecting previously unselected package libctf0:arm64.
+#6 29.72 Preparing to unpack .../05-libctf0_2.44-3_arm64.deb ...
+#6 29.72 Unpacking libctf0:arm64 (2.44-3) ...
+#6 29.75 Selecting previously unselected package libjansson4:arm64.
+#6 29.75 Preparing to unpack .../06-libjansson4_2.14-2+b3_arm64.deb ...
+#6 29.76 Unpacking libjansson4:arm64 (2.14-2+b3) ...
+#6 29.78 Selecting previously unselected package binutils-aarch64-linux-gnu.
+#6 29.78 Preparing to unpack .../07-binutils-aarch64-linux-gnu_2.44-3_arm64.deb ...
+#6 29.79 Unpacking binutils-aarch64-linux-gnu (2.44-3) ...
+#6 30.13 Selecting previously unselected package binutils.
+#6 30.13 Preparing to unpack .../08-binutils_2.44-3_arm64.deb ...
+#6 30.14 Unpacking binutils (2.44-3) ...
+#6 30.21 Selecting previously unselected package libisl23:arm64.
+#6 30.21 Preparing to unpack .../09-libisl23_0.27-1_arm64.deb ...
+#6 30.21 Unpacking libisl23:arm64 (0.27-1) ...
+#6 30.29 Selecting previously unselected package libmpfr6:arm64.
+#6 30.29 Preparing to unpack .../10-libmpfr6_4.2.2-1_arm64.deb ...
+#6 30.30 Unpacking libmpfr6:arm64 (4.2.2-1) ...
+#6 30.35 Selecting previously unselected package libmpc3:arm64.
+#6 30.35 Preparing to unpack .../11-libmpc3_1.3.1-1+b3_arm64.deb ...
+#6 30.35 Unpacking libmpc3:arm64 (1.3.1-1+b3) ...
+#6 30.37 Selecting previously unselected package cpp-14-aarch64-linux-gnu.
+#6 30.37 Preparing to unpack .../12-cpp-14-aarch64-linux-gnu_14.2.0-19_arm64.deb ...
+#6 30.37 Unpacking cpp-14-aarch64-linux-gnu (14.2.0-19) ...
+#6 31.22 Selecting previously unselected package cpp-14.
+#6 31.23 Preparing to unpack .../13-cpp-14_14.2.0-19_arm64.deb ...
+#6 31.23 Unpacking cpp-14 (14.2.0-19) ...
+#6 31.25 Selecting previously unselected package cpp-aarch64-linux-gnu.
+#6 31.25 Preparing to unpack .../14-cpp-aarch64-linux-gnu_4%3a14.2.0-1_arm64.deb ...
+#6 31.25 Unpacking cpp-aarch64-linux-gnu (4:14.2.0-1) ...
+#6 31.28 Selecting previously unselected package cpp.
+#6 31.28 Preparing to unpack .../15-cpp_4%3a14.2.0-1_arm64.deb ...
+#6 31.28 Unpacking cpp (4:14.2.0-1) ...
+#6 31.30 Selecting previously unselected package libcc1-0:arm64.
+#6 31.31 Preparing to unpack .../16-libcc1-0_14.2.0-19_arm64.deb ...
+#6 31.31 Unpacking libcc1-0:arm64 (14.2.0-19) ...
+#6 31.33 Selecting previously unselected package libgomp1:arm64.
+#6 31.33 Preparing to unpack .../17-libgomp1_14.2.0-19_arm64.deb ...
+#6 31.33 Unpacking libgomp1:arm64 (14.2.0-19) ...
+#6 31.36 Selecting previously unselected package libitm1:arm64.
+#6 31.36 Preparing to unpack .../18-libitm1_14.2.0-19_arm64.deb ...
+#6 31.36 Unpacking libitm1:arm64 (14.2.0-19) ...
+#6 31.38 Selecting previously unselected package libatomic1:arm64.
+#6 31.38 Preparing to unpack .../19-libatomic1_14.2.0-19_arm64.deb ...
+#6 31.39 Unpacking libatomic1:arm64 (14.2.0-19) ...
+#6 31.41 Selecting previously unselected package libasan8:arm64.
+#6 31.41 Preparing to unpack .../20-libasan8_14.2.0-19_arm64.deb ...
+#6 31.41 Unpacking libasan8:arm64 (14.2.0-19) ...
+#6 31.66 Selecting previously unselected package liblsan0:arm64.
+#6 31.66 Preparing to unpack .../21-liblsan0_14.2.0-19_arm64.deb ...
+#6 31.67 Unpacking liblsan0:arm64 (14.2.0-19) ...
+#6 31.79 Selecting previously unselected package libtsan2:arm64.
+#6 31.79 Preparing to unpack .../22-libtsan2_14.2.0-19_arm64.deb ...
+#6 31.79 Unpacking libtsan2:arm64 (14.2.0-19) ...
+#6 32.21 Selecting previously unselected package libubsan1:arm64.
+#6 32.21 Preparing to unpack .../23-libubsan1_14.2.0-19_arm64.deb ...
+#6 32.21 Unpacking libubsan1:arm64 (14.2.0-19) ...
+#6 32.32 Selecting previously unselected package libhwasan0:arm64.
+#6 32.32 Preparing to unpack .../24-libhwasan0_14.2.0-19_arm64.deb ...
+#6 32.32 Unpacking libhwasan0:arm64 (14.2.0-19) ...
+#6 32.49 Selecting previously unselected package libgcc-14-dev:arm64.
+#6 32.49 Preparing to unpack .../25-libgcc-14-dev_14.2.0-19_arm64.deb ...
+#6 32.50 Unpacking libgcc-14-dev:arm64 (14.2.0-19) ...
+#6 32.89 Selecting previously unselected package gcc-14-aarch64-linux-gnu.
+#6 32.90 Preparing to unpack .../26-gcc-14-aarch64-linux-gnu_14.2.0-19_arm64.deb ...
+#6 32.90 Unpacking gcc-14-aarch64-linux-gnu (14.2.0-19) ...
+#6 35.24 Selecting previously unselected package gcc-14.
+#6 35.25 Preparing to unpack .../27-gcc-14_14.2.0-19_arm64.deb ...
+#6 35.27 Unpacking gcc-14 (14.2.0-19) ...
+#6 35.45 Selecting previously unselected package gcc-aarch64-linux-gnu.
+#6 35.45 Preparing to unpack .../28-gcc-aarch64-linux-gnu_4%3a14.2.0-1_arm64.deb ...
+#6 35.46 Unpacking gcc-aarch64-linux-gnu (4:14.2.0-1) ...
+#6 35.58 Selecting previously unselected package gcc.
+#6 35.58 Preparing to unpack .../29-gcc_4%3a14.2.0-1_arm64.deb ...
+#6 35.59 Unpacking gcc (4:14.2.0-1) ...
+#6 35.72 Setting up binutils-common:arm64 (2.44-3) ...
+#6 35.73 Setting up libctf-nobfd0:arm64 (2.44-3) ...
+#6 35.74 Setting up libgomp1:arm64 (14.2.0-19) ...
+#6 35.75 Setting up libsframe1:arm64 (2.44-3) ...
+#6 35.76 Setting up libjansson4:arm64 (2.14-2+b3) ...
+#6 35.77 Setting up libmpfr6:arm64 (4.2.2-1) ...
+#6 35.77 Setting up libmpc3:arm64 (1.3.1-1+b3) ...
+#6 35.78 Setting up libatomic1:arm64 (14.2.0-19) ...
+#6 35.79 Setting up libubsan1:arm64 (14.2.0-19) ...
+#6 35.81 Setting up libhwasan0:arm64 (14.2.0-19) ...
+#6 35.82 Setting up libasan8:arm64 (14.2.0-19) ...
+#6 35.83 Setting up libtsan2:arm64 (14.2.0-19) ...
+#6 35.84 Setting up libbinutils:arm64 (2.44-3) ...
+#6 35.85 Setting up libisl23:arm64 (0.27-1) ...
+#6 35.86 Setting up libcc1-0:arm64 (14.2.0-19) ...
+#6 35.88 Setting up liblsan0:arm64 (14.2.0-19) ...
+#6 35.89 Setting up libitm1:arm64 (14.2.0-19) ...
+#6 35.92 Setting up libctf0:arm64 (2.44-3) ...
+#6 35.93 Setting up binutils-aarch64-linux-gnu (2.44-3) ...
+#6 35.93 Setting up libgprofng0:arm64 (2.44-3) ...
+#6 35.94 Setting up cpp-14-aarch64-linux-gnu (14.2.0-19) ...
+#6 35.95 Setting up libgcc-14-dev:arm64 (14.2.0-19) ...
+#6 35.96 Setting up binutils (2.44-3) ...
+#6 35.97 Setting up cpp-aarch64-linux-gnu (4:14.2.0-1) ...
+#6 35.98 Setting up cpp-14 (14.2.0-19) ...
+#6 35.99 Setting up cpp (4:14.2.0-1) ...
+#6 36.04 Setting up gcc-14-aarch64-linux-gnu (14.2.0-19) ...
+#6 36.05 Setting up gcc-aarch64-linux-gnu (4:14.2.0-1) ...
+#6 36.06 Setting up gcc-14 (14.2.0-19) ...
+#6 36.08 Setting up gcc (4:14.2.0-1) ...
+#6 36.19 Processing triggers for libc-bin (2.41-12+deb13u1) ...
+#6 DONE 37.2s
+
+#7 [3/8] RUN groupadd -r appgroup && useradd -r -g appgroup -d /home/appuser -m -s /sbin/nologin appuser
+#7 DONE 0.9s
+
+#8 [4/8] WORKDIR /app
+#8 DONE 0.0s
+
+#9 [5/8] COPY requirements.txt .
+#9 DONE 0.0s
+
+#10 [6/8] RUN python -m pip install --upgrade pip  && pip install --no-cache-dir -r requirements.txt
+#10 2.404 Requirement already satisfied: pip in /usr/local/lib/python3.13/site-packages (25.3)
+#10 2.935 Collecting pip
+#10 3.570   Downloading pip-26.0-py3-none-any.whl.metadata (4.7 kB)
+#10 3.663 Downloading pip-26.0-py3-none-any.whl (1.8 MB)
+#10 4.116    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.8/1.8 MB 6.2 MB/s  0:00:00
+#10 4.143 Installing collected packages: pip
+#10 4.143   Attempting uninstall: pip
+#10 4.148     Found existing installation: pip 25.3
+#10 4.325     Uninstalling pip-25.3:
+#10 5.017       Successfully uninstalled pip-25.3
+#10 6.206 Successfully installed pip-26.0
+#10 6.207 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+#10 7.596 Collecting Flask==3.1.0 (from -r requirements.txt (line 1))
+#10 7.863   Downloading flask-3.1.0-py3-none-any.whl.metadata (2.7 kB)
+#10 7.957 Collecting Werkzeug>=3.1 (from Flask==3.1.0->-r requirements.txt (line 1))
+#10 8.021   Downloading werkzeug-3.1.5-py3-none-any.whl.metadata (4.0 kB)
+#10 8.101 Collecting Jinja2>=3.1.2 (from Flask==3.1.0->-r requirements.txt (line 1))
+#10 8.169   Downloading jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+#10 8.244 Collecting itsdangerous>=2.2 (from Flask==3.1.0->-r requirements.txt (line 1))
+#10 8.308   Downloading itsdangerous-2.2.0-py3-none-any.whl.metadata (1.9 kB)
+#10 8.393 Collecting click>=8.1.3 (from Flask==3.1.0->-r requirements.txt (line 1))
+#10 8.452   Downloading click-8.3.1-py3-none-any.whl.metadata (2.6 kB)
+#10 8.517 Collecting blinker>=1.9 (from Flask==3.1.0->-r requirements.txt (line 1))
+#10 8.586   Downloading blinker-1.9.0-py3-none-any.whl.metadata (1.6 kB)
+#10 8.738 Collecting MarkupSafe>=2.0 (from Jinja2>=3.1.2->Flask==3.1.0->-r requirements.txt (line 1))
+#10 8.814   Downloading markupsafe-3.0.3-cp313-cp313-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl.metadata (2.7 kB)
+#10 8.884 Downloading flask-3.1.0-py3-none-any.whl (102 kB)
+#10 9.027 Downloading blinker-1.9.0-py3-none-any.whl (8.5 kB)
+#10 9.091 Downloading click-8.3.1-py3-none-any.whl (108 kB)
+#10 9.172 Downloading itsdangerous-2.2.0-py3-none-any.whl (16 kB)
+#10 9.237 Downloading jinja2-3.1.6-py3-none-any.whl (134 kB)
+#10 9.321 Downloading markupsafe-3.0.3-cp313-cp313-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl (24 kB)
+#10 9.391 Downloading werkzeug-3.1.5-py3-none-any.whl (225 kB)
+#10 9.445 Installing collected packages: MarkupSafe, itsdangerous, click, blinker, Werkzeug, Jinja2, Flask
+#10 9.907 
+#10 9.910 Successfully installed Flask-3.1.0 Jinja2-3.1.6 MarkupSafe-3.0.3 Werkzeug-3.1.5 blinker-1.9.0 click-8.3.1 itsdangerous-2.2.0
+#10 9.910 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+#10 DONE 10.4s
+
+#11 [7/8] COPY app.py .
+#11 DONE 0.0s
+
+#12 [8/8] RUN chown -R appuser:appgroup /app
+#12 DONE 0.2s
+
+#13 exporting to image
+#13 exporting layers
+#13 exporting layers 7.3s done
+#13 exporting manifest sha256:21510e1ea3021e5b4b871880b88467040fecda34575b62215d2630d96ea9df55 done
+#13 exporting config sha256:ae057c1a0b4faee60ec0d57053519e7d81aba7a32b4d66fe0cab58a5685a8a75 done
+#13 exporting attestation manifest sha256:261ce7665a093eebbd77c9bd681f591e7320e2d11e1277d4c0d1aa66fc026584 0.0s done
+#13 exporting manifest list sha256:0bdb7eed5b1a2d0c94182973a6883de99afdb9efbe26b1156d7c8d17b5469845 done
+#13 naming to docker.io/library/devops-info-service:lab02 done
+#13 unpacking to docker.io/library/devops-info-service:lab02
+#13 unpacking to docker.io/library/devops-info-service:lab02 1.6s done
+#13 DONE 9.0s
+
+View build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/10yr646xr8e4bz24kpr8ynrq5

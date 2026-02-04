@@ -1,0 +1,2 @@
+REPOSITORY            TAG       SIZE
+devops-info-service   lab02     457MB
