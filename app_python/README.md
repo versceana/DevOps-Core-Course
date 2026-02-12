@@ -1,5 +1,3 @@
-![Python CI](https://github.com/versceana/DevOps-Core-Course/actions/runs/21964172563)
-
 # DevOps Info Service
 
 A small web service that returns service, system and runtime information.  
