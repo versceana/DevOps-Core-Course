@@ -1,3 +1,5 @@
+![Python CI](https://github.com/versceana/DevOps-Core-Course/actions/workflows/python-ci.yml/badge.svg?branch=main)
+
 # DevOps Info Service
 
 A small web service that returns service, system and runtime information.  
