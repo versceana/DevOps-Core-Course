@@ -1,4 +1,4 @@
-![Python CI](https://github.com/versceana/DevOps-Core-Course/actions/workflows/python-ci.yml/badge.svg?branch=main)
+![Python CI](https://github.com/versceana/DevOps-Core-Course/actions/runs/21964172563)
 
 # DevOps Info Service
 
@@ -38,7 +38,7 @@ source venv/bin/activate   # macOS / Linux
 
 # install pinned dependencies
 pip install -r requirements.txt
-````
+```
 
 > We keep the virtual environment inside `app_python/venv/`. This directory is listed in `.gitignore` and will not be committed.
 
@@ -113,8 +113,8 @@ curl -s http://127.0.0.1:8000/ | jq .
     "path": "/"
   },
   "endpoints": [
-    {"path": "/", "method": "GET", "description": "Service information"},
-    {"path": "/health", "method": "GET", "description": "Health check"}
+    { "path": "/", "method": "GET", "description": "Service information" },
+    { "path": "/health", "method": "GET", "description": "Health check" }
   ]
 }
 ```
@@ -141,8 +141,8 @@ curl -s http://127.0.0.1:8000/health | jq .
 
 **Status codes**
 
-* `200 OK` — healthy
-* `500` — internal server error (if thrown)
+- `200 OK` — healthy
+- `500` — internal server error (if thrown)
 
 ---
 
@@ -198,8 +198,8 @@ app_python/
 
 ## Notes & caveats
 
-* This project uses Flask's development server for lab/demo purposes. For production or grading polish, a WSGI server (Gunicorn/uvicorn) + proper logging should be used.
-* The code attempts to use UTC timestamps. There may be a `DeprecationWarning` about `utcnow()` on some Python versions; this does not affect lab functionality. A later commit will make datetime objects timezone-aware to remove the warning.
+- This project uses Flask's development server for lab/demo purposes. For production or grading polish, a WSGI server (Gunicorn/uvicorn) + proper logging should be used.
+- The code attempts to use UTC timestamps. There may be a `DeprecationWarning` about `utcnow()` on some Python versions; this does not affect lab functionality. A later commit will make datetime objects timezone-aware to remove the warning.
 
 ---
 
