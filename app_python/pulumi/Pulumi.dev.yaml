@@ -1,0 +1,5 @@
+config:
+  aws:region: us-east-1
+  lab4-vm:key_name: vockey
+  lab4-vm:allowed_ssh_ip:
+    secure: AAABACtaxnsJyyQ6x52lUn6w86d34eLEu4K8zmL9dhfGHS/INLyTxTRmsc2EBUUY
