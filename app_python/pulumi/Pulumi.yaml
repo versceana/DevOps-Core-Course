@@ -1,0 +1,11 @@
+name: lab4-vm
+description: Lab4 VM with Pulumi
+runtime:
+  name: python
+  options:
+    toolchain: pip
+    virtualenv: venv
+config:
+  pulumi:tags:
+    value:
+      pulumi:template: python
