@@ -1,0 +1,5 @@
+[webservers]
+vm1 ansible_host=34.207.215.1 ansible_user=ubuntu ansible_ssh_private_key_file=keys/labsuser.pem
+
+[webservers:vars]
+ansible_python_interpreter=/usr/bin/python3
