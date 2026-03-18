@@ -2,15 +2,15 @@ name: Ansible Deployment
 
 on:
   push:
-    branches: [ master ]
+    branches: [master]
     paths:
-      - 'app_python/ansible/**'
-      - '!app_python/ansible/docs/**'
-      - '.github/workflows/ansible-deploy.yml'
+      - "app_python/ansible/**"
+      - "!app_python/ansible/docs/**"
+      - ".github/workflows/ansible-deploy.yml"
   pull_request:
-    branches: [ master ]
+    branches: [master]
     paths:
-      - 'app_python/ansible/**'
+      - "app_python/ansible/**"
 
 jobs:
   lint:
@@ -22,7 +22,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.12'
+          python-version: "3.12"
 
       - name: Install dependencies
         run: |
@@ -44,7 +44,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.12'
+          python-version: "3.12"
 
       - name: Install Ansible and Docker modules
         run: |
