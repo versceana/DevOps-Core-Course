@@ -10,7 +10,7 @@ on:
   pull_request:
     branches: [ master ]
     paths:
-      - 'ansible/**'
+      - 'app_python/ansible/**'
 
 jobs:
   lint:
@@ -30,7 +30,7 @@ jobs:
 
       - name: Run ansible-lint
         run: |
-          cd ansible
+          cd app_python/ansible
           ansible-lint playbooks/*.yml
 
   deploy:
@@ -63,7 +63,7 @@ jobs:
 
       - name: Deploy with Ansible
         run: |
-          cd ansible
+          cd app_python/ansible
           ansible-playbook playbooks/deploy.yml \
             -i inventory/hosts.ini \
             --vault-password-file /tmp/vault_pass
