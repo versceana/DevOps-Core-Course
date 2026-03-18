@@ -1,4 +1,5 @@
 # DevOps Info Service
+[![Ansible Deployment](https://github.com/versceana/DevOps-Core-Course/actions/workflows/ansible-deploy.yml/badge.svg)](https://github.com/versceana/DevOps-Core-Course/actions/workflows/ansible-deploy.yml)
 
 A small web service that returns service, system and runtime information.  
 Implemented for the DevOps Core Course (Lab 1) using **Python + Flask**.
