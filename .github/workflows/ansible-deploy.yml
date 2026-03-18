@@ -4,8 +4,8 @@ on:
   push:
     branches: [ master ]
     paths:
-      - 'ansible/**'
-      - '!ansible/docs/**'
+      - 'app_python/ansible/**'
+      - '!app_python/ansible/docs/**'
       - '.github/workflows/ansible-deploy.yml'
   pull_request:
     branches: [ master ]
