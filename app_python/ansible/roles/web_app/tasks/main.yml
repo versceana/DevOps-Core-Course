@@ -4,7 +4,7 @@
     msg:
       - "username: {{ dockerhub_username }}"
       - "password: {{ dockerhub_password | default('UNDEFINED') }}"
-      - "app_name: {{ app_name }}"
+      - "app_name: {{ web_app_name }}"
   no_log: false
 
 - name: Login to Docker Hub
@@ -15,8 +15,8 @@
 
 - name: Pull application image
   community.docker.docker_image:
-    name: "{{ docker_image }}"
-    tag: "{{ docker_tag }}"
+    name: "{{ web_app_docker_image }}"
+    tag: "{{ web_app_docker_tag }}"
     source: pull
 
 - name: Include wipe tasks
@@ -51,14 +51,14 @@
 
     - name: Wait for application to be ready
       ansible.builtin.wait_for:
-        port: "{{ app_port }}"
+        port: "{{ web_app_port }}"
         host: 127.0.0.1
         delay: 5
         timeout: 60
 
     - name: Verify health endpoint
       ansible.builtin.uri:
-        url: "http://127.0.0.1:{{ app_port }}/health"
+        url: "http://127.0.0.1:{{ web_app_port }}/health"
         method: GET
         status_code: 200
         return_content: true
