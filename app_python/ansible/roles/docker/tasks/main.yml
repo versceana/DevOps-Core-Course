@@ -16,8 +16,8 @@
       ansible.builtin.apt_key:
         url: https://download.docker.com/linux/ubuntu/gpg
         state: present
-      register: gpg_result
-      until: gpg_result is success
+      register: docker_gpg_result
+      until: docker_gpg_result is success
       retries: 3
       delay: 10
 
@@ -64,4 +64,3 @@
         name: docker
         state: started
         enabled: true
-      ignore_errors: true

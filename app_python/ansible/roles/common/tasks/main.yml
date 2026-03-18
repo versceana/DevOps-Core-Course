@@ -7,8 +7,8 @@
       ansible.builtin.apt:
         update_cache: true
         cache_valid_time: 3600
-      register: apt_result
-      until: apt_result is success
+      register: common_apt_result
+      until: common_apt_result is success
       retries: 3
       delay: 5
       tags: packages
@@ -30,9 +30,11 @@
         msg: "Apt update failed, trying to fix missing keys..."
       tags: packages
 
-    - name: Run apt-get update --fix-missing
-      ansible.builtin.command: apt-get update --fix-missing
-      changed_when: false
+    - name: Fix missing apt keys
+      ansible.builtin.apt:
+        update_cache: true
+        force_apt_get: true
+        cache_valid_time: 0
       tags: packages
 
   always:
@@ -40,4 +42,5 @@
       ansible.builtin.copy:
         content: "Common role finished at {{ ansible_date_time.iso8601 }}"
         dest: /tmp/ansible-common.log
+        mode: "0644"
       tags: always
