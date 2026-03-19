@@ -4,6 +4,7 @@ import platform
 import logging
 from datetime import datetime, timezone
 from flask import Flask, jsonify, request
+from pythonjsonlogger import jsonlogger
 
 # ========== CONFIGURATION ==========
 HOST = os.getenv('HOST', '0.0.0.0')
@@ -13,10 +14,14 @@ DEBUG = os.getenv('DEBUG', 'False').lower() == 'true'
 # ========== APPLICATION SETUP ==========
 app = Flask(__name__)
 
-logging.basicConfig(
-    level=logging.INFO if not DEBUG else logging.DEBUG,
-    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
-)
+logHandler = logging.StreamHandler()
+formatter = jsonlogger.JsonFormatter('%(asctime)s %(name)s %(levelname)s %(message)s')
+logHandler.setFormatter(formatter)
+
+logger = logging.getLogger()
+logger.addHandler(logHandler)
+logger.setLevel(logging.INFO if not DEBUG else logging.DEBUG)
+
 logger = logging.getLogger(__name__)
 
 START_TIME = datetime.now(timezone.utc)
