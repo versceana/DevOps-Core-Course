@@ -1,0 +1,28 @@
+# Default values for my-python-app
+replicaCount: 1
+
+image:
+  repository: versceana/devops-info-service
+  tag: latest
+  pullPolicy: IfNotPresent
+
+service:
+  type: NodePort
+  port: 80
+  targetPort: 5000
+
+livenessProbe:
+  initialDelaySeconds: 10
+  periodSeconds: 5
+
+readinessProbe:
+  initialDelaySeconds: 5
+  periodSeconds: 3
+
+resources:
+  limits:
+    cpu: 200m
+    memory: 256Mi
+  requests:
+    cpu: 100m
+    memory: 128Mi
