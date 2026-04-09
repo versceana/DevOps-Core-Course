@@ -26,3 +26,8 @@ resources:
   requests:
     cpu: 100m
     memory: 128Mi
+
+# Secrets configuration (use --set or external secrets in production)
+secrets:
+  username: "change_me"
+  password: "change_me"

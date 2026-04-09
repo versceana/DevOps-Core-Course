@@ -13,12 +13,7 @@ spec:
     metadata:
       labels:
         {{- include "my-python-app.selectorLabels" . | nindent 8 }}
-      annotations:
-        vault.hashicorp.com/agent-inject: "true"
-        vault.hashicorp.com/role: "myapp-role"
-        vault.hashicorp.com/agent-inject-secret-config: "secret/data/myapp/config"
     spec:
-      serviceAccountName: default  # используем service account по умолчанию
       containers:
       - name: {{ .Chart.Name }}
         image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
