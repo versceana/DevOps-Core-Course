@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ include "my-python-app.fullname" . }}-config
+  labels:
+    {{- include "my-python-app.labels" . | nindent 4 }}
+data:
+  config.json: |-
+{{ .Files.Get "files/config.json" | indent 4 }}
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ include "my-python-app.fullname" . }}-env
+  labels:
+    {{- include "my-python-app.labels" . | nindent 4 }}
+data:
+  APP_ENV: {{ .Values.environment | default "production" | quote }}
+  LOG_LEVEL: {{ .Values.logLevel | default "INFO" | quote }}
+  COUNTER_FILE: {{ .Values.counterFile | default "/data/visits" | quote }}

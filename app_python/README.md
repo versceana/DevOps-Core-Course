@@ -12,7 +12,7 @@ This service exposes two endpoints:
 
 - `GET /` — Returns detailed information about the service, system, runtime and request.
 - `GET /health` — Lightweight health check for monitoring/probes.
-
+- `GET /visits` - Returns visit count.
 ---
 
 ## Prerequisites
