@@ -13,12 +13,7 @@ spec:
     metadata:
       labels:
         {{- include "my-python-app.selectorLabels" . | nindent 8 }}
-      annotations:
-        vault.hashicorp.com/agent-inject: "true"
-        vault.hashicorp.com/role: "myapp-role"
-        vault.hashicorp.com/agent-inject-secret-config: "secret/data/myapp/config"
     spec:
-      serviceAccountName: default  # используем service account по умолчанию
       containers:
       - name: {{ .Chart.Name }}
         image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
@@ -26,6 +21,16 @@ spec:
         ports:
         - containerPort: {{ .Values.service.targetPort }}
           name: http
+        envFrom:
+        - secretRef:
+            name: {{ include "my-python-app.fullname" . }}-secret
+        - configMapRef:
+            name: {{ include "my-python-app.fullname" . }}-env
+        volumeMounts:
+        - name: config-volume
+          mountPath: /config
+        - name: data-volume
+          mountPath: /data
         livenessProbe:
           httpGet:
             path: /health
@@ -40,3 +45,10 @@ spec:
           periodSeconds: {{ .Values.readinessProbe.periodSeconds }}
         resources:
           {{- toYaml .Values.resources | nindent 10 }}
+      volumes:
+      - name: config-volume
+        configMap:
+          name: {{ include "my-python-app.fullname" . }}-config
+      - name: data-volume
+        persistentVolumeClaim:
+          claimName: {{ include "my-python-app.fullname" . }}-data

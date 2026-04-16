@@ -31,3 +31,7 @@ resources:
 secrets:
   username: "change_me"
   password: "change_me"
+
+environment: "production"
+logLevel: "INFO"
+counterFile: "/data/visits"
